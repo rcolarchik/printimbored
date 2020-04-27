@@ -1,10 +1,14 @@
+#!/usr/bin/env python3
 from time import sleep
 from random import *
 
-time = .05
+time = .01
+phrase = "I'm Bored"
+y=''
 
 ##################################################################################################################################
 def letterspace(word,space):
+    global y
     mword = word
     for i in range(len(word)):
         x = i+i
@@ -58,8 +62,8 @@ def inwards(phrase,num,spacestr):
 #################################################################################
 
 def main():
-    z = 0
-    phrase = "I'm Bored"
+    global y
+    z=0;
     depth1 = randint(1,100)
     depth2 = randint(1,100)
     num = 3
