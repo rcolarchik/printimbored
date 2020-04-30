@@ -30,9 +30,9 @@ def letterspace(word,space):
         final = y+mword[1:]
         print(choice(colors) + final)
         sleep(time)
-    print(final)
-    print(final)
-    print(final)
+    print(choice(colors) + final)
+    print(choice(colors) + final)
+    print(choice(colors) + final)
     return final
 def letterlessspace(word,space):
     mword = word
