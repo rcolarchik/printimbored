@@ -4,7 +4,8 @@ Print I'm bored is an cross platform software application that prints I'm bored.
 
 ### Usage
 
-$ python PrintImBored.py
+ * pip3 install -r requirements.txt
+ * python3 PrintImBored.py
 
 ## Changelog
 
