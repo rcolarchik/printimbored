@@ -8,7 +8,7 @@ $ python PrintImBored.py
 
 ## Changelog
 
-[Learn about the latest improvements][changelog].
+[Learn about the latest improvements](CHANGELOG.md)
 
 ## Contributing
 
