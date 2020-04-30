@@ -1,8 +1,8 @@
 ## Print I'm Bored
 
-Print I'm bored is an cross platform software application that prints I'm bored. This project is an example of how the popular FizzBuzz game might be built were it subject to the high quality standards of enterprise software.
+Print I'm bored is an cross platform software application that prints I'm bored. 
 
-###Usage
+### Usage
 
 $ python PrintImBored.py
 
