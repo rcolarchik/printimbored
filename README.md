@@ -6,8 +6,6 @@ Print I'm bored is an cross platform software application that prints I'm bored.
 
 $ python PrintImBored.py
 
-![Output sample](https://github.com/ajasmin/camstudio-mousedown-highlight/raw/master/android_vid_test.gif)
-
 ## Changelog
 
 [Learn about the latest improvements][changelog].
