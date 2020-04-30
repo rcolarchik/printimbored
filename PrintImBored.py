@@ -1,10 +1,23 @@
 #!/usr/bin/env python3
 from time import sleep
 from random import *
+import colorama
+from colorama import Fore, Style, init
+init(autoreset=True)
 
 time = .01
 phrase = "I'm Bored"
 y=''
+
+colors = [
+    Fore.RED, 
+    Fore.GREEN,
+    Fore.YELLOW,
+    Fore.BLUE,
+    Fore.MAGENTA,
+    Fore.CYAN,
+    Fore.WHITE
+]
 
 ##################################################################################################################################
 def letterspace(word,space):
@@ -15,11 +28,11 @@ def letterspace(word,space):
         #print(x)
         mword = mword[:x]+ ' ' + mword[x:]
         final = y+mword[1:]
-        print(final)
+        print(choice(colors) + final)
         sleep(time)
-    print(final)
-    print(final)
-    print(final)
+    print(choice(colors) + final)
+    print(choice(colors) + final)
+    print(choice(colors) + final)
     return final
 def letterlessspace(word,space):
     mword = word
@@ -36,7 +49,7 @@ def letterlessspace(word,space):
         final = space + mword
         #print(beginning)
         #Sprint(ending)
-        print(final)
+        print(choice(colors) + final)
         #exit()
         sleep(time)
 def outwards(phrase, num):
@@ -46,7 +59,7 @@ def outwards(phrase, num):
         x += 1
         space += ' '
         statement = space + phrase
-        print(statement)
+        print(choice(colors) + statement)
         sleep(time)
     return [space,statement]
 def inwards(phrase,num,spacestr):
@@ -56,7 +69,7 @@ def inwards(phrase,num,spacestr):
         y += 1
         space = space[1:]
         statement = space + phrase
-        print(statement)
+        print(choice(colors) + statement)
         sleep(time)
     return statement
 #################################################################################
@@ -71,7 +84,7 @@ def main():
     rannum = randint(1,10)
     while z<znum:
         z+=1
-        print(phrase)
+        print(choice(colors) + phrase)
         sleep(time)
     z=0
     while  z<znum:
@@ -100,7 +113,7 @@ def main():
     z = 0
     while z<znum:
         z+=1
-        print(phrase)
+        print(choice(colors) + phrase)
         sleep(time)
     z=0
     while  z<znum:
