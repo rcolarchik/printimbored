@@ -5,7 +5,7 @@ import colorama
 from colorama import Fore, Style, init
 init(autoreset=True)
 
-time = .01
+time = .10
 phrase = "I'm Bored"
 y=''
 
@@ -28,11 +28,10 @@ def letterspace(word,space):
         #print(x)
         mword = mword[:x]+ ' ' + mword[x:]
         final = y+mword[1:]
-        print(choice(colors) + final)
-        sleep(time)
-    print(choice(colors) + final)
-    print(choice(colors) + final)
-    print(choice(colors) + final)
+        aprint(final)
+    aprint(final)
+    aprint(final)
+    aprint(final)
     return final
 def letterlessspace(word,space):
     mword = word
@@ -49,9 +48,7 @@ def letterlessspace(word,space):
         final = space + mword
         #print(beginning)
         #Sprint(ending)
-        print(choice(colors) + final)
-        #exit()
-        sleep(time)
+        aprint(final)
 def outwards(phrase, num):
     x = 0
     space = ''
@@ -59,8 +56,7 @@ def outwards(phrase, num):
         x += 1
         space += ' '
         statement = space + phrase
-        print(choice(colors) + statement)
-        sleep(time)
+        aprint(statement)
     return [space,statement]
 def inwards(phrase,num,spacestr):
     y = 0
@@ -69,23 +65,24 @@ def inwards(phrase,num,spacestr):
         y += 1
         space = space[1:]
         statement = space + phrase
-        print(choice(colors) + statement)
-        sleep(time)
+        aprint(statement)
     return statement
+def aprint(val):
+    print(choice(colors) + val)
+    sleep(time)
 #################################################################################
 
 def main():
     global y
     z=0;
-    depth1 = randint(1,100)
-    depth2 = randint(1,100)
+    depth1 = randint(15,30)
+    depth2 = randint(5,15)
     num = 3
     znum = randint(1,10)
     rannum = randint(1,10)
     while z<znum:
         z+=1
-        print(choice(colors) + phrase)
-        sleep(time)
+        aprint(phrase)
     z=0
     while  z<znum:
         z+=1
@@ -113,8 +110,7 @@ def main():
     z = 0
     while z<znum:
         z+=1
-        print(choice(colors) + phrase)
-        sleep(time)
+        aprint(phrase)
     z=0
     while  z<znum:
         z+=1
